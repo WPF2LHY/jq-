@@ -1,0 +1,8 @@
+<block>
+<view wx:for="{{list}}" wx:key="i">{{item.num}}</view>
+</block>
+
+
+
+<button bindtap='upList'>升序</button>
+<button bindtap='downList'>降序</button>

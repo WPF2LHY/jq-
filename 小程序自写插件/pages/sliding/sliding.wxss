@@ -1,0 +1,96 @@
+/* tip */
+.tip_container {
+  height: 80rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.scrolltxt {
+  padding-left:18rpx;
+height:80rpx;
+line-height:80rpx;
+box-sizing: border-box;
+}
+
+.marquee_box {
+  position: relative;
+  color: #333;
+  height: 80rpx;
+  display: block;
+  overflow: hidden;
+}
+
+.marquee_text {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  font-size: 26rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color:#777777;
+}
+
+.tip {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tip .tip_img {
+  display: block;
+  width: 113rpx;
+  height: 28rpx;
+  padding-right: 24rpx;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.tip .tip_text {
+  color: #777;
+  padding-left: 18rpx;
+  box-sizing: border-box;
+  line-height: 28rpx;
+}
+
+
+/* 多行滚动 */
+.sliding{
+  width: 100%;
+  background: #fff;
+  margin-top: 400rpx;
+  height: 80rpx;
+  position: relative;
+}
+.sliding_swiper{
+  height: 80rpx;
+}
+.slidingImg{
+  display: block;
+  width: 113rpx;
+  height: 28rpx;
+  padding-right: 24rpx;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  position: absolute;
+  left: 10rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.sliding_item{
+  flex: 1;
+color: #333;
+font-size: 26rpx;
+line-height: 80rpx;
+padding: 0 20rpx 0 140rpx;
+box-sizing: border-box;
+white-space:nowrap;
+text-overflow:ellipsis;
+overflow:hidden;
+}

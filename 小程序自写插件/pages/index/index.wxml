@@ -1,0 +1,52 @@
+<view bindtap="gotoPage" data-page="demo14" class="mt20 list-item between">登陆授权
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo15" class="mt20 list-item between ">支付
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo1" class="mt20 list-item between">扇形图
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo2" class="mt20 list-item between">动画
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo3" class="mt20 list-item between">排序练习
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo4" class="mt20 list-item between">下载图片
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo5" class="mt20 list-item between">调用地图
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo6" class="mt20 list-item between">上传图片
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo7" class="mt20 list-item between">扫一扫
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo8" class="mt20 list-item between">标签添加
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo9" class="mt20 list-item between">客服
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo10" class="mt20 list-item between">横向滑动
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo11" class="mt20 list-item between">购物车
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo12" class="mt20 list-item between">腾讯地图
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo13" class="mt20 list-item between">swiper滑动
+  <image src='../../images/right.png'></image>
+</view>
+<view bindtap="gotoPage" data-page="demo16" class="mt20 list-item between">调用微信的地址
+  <image src='../../images/right.png'></image>
+</view>
+
+<view bindtap="gotoPage" data-page="city" class="mt20 list-item between">显示city
+  <image src='../../images/right.png'></image>
+</view>

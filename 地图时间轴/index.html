@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>jQuery时间轴播放</title>
+		<link rel="stylesheet" type="text/css" href="css/timePlay.css"/>	
+		<style type="text/css">
+		  .tip{
+		    position: absolute;
+		    top: 5px;
+		    left: 5px;
+		    height: 25px;
+		    line-height: 25px;
+		    color: #333;
+		  }
+			#pause{
+			  position: absolute;
+			  top: 60px;
+			  left: 5px;
+        width: 200px;
+        height: 40px;
+        color: #333;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        border: none;
+        background: lightcyan;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba(153,157,159,0.5);
+        cursor: pointer;
+			}
+			#play{
+			  position: absolute;
+        top: 110px;
+        left: 5px;
+        width: 200px;
+        height: 40px;
+        color: #333;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        border: none;
+        background: lightcyan;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba(153,157,159,0.5);
+        cursor: pointer;
+			}
+			.timeInfo{
+			  position: absolute;
+			  right: 0;
+			  bottom: 90px;
+			  padding: 10px;
+			  border-radius: 6px;
+			  color: #fff;
+			  background: rgba(0,0,0,0.5);
+			  text-align: right;
+			}
+			#map{
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			}
+			.map-point{
+			  position: absolute;
+			  width: 50px;
+			  height: 28px;
+			  line-height: 28px;
+			  text-align: center;
+			  color: #fff;
+			  background: #666;
+			  border-radius: 10px;
+			}
+			.color-1 {
+        background: #0eb621 !important;
+      }
+      
+      .color-2 {
+          background: #ffda2b !important;
+      }
+      
+      .color-3 {
+          background: #FF8A2B !important;
+      }
+      
+      .color-4 {
+          background: #fa2313 !important;
+      }
+      
+      .color-5 {
+          background: #b20dc5 !important;
+      }
+      
+      .color-6 {
+          background: #62072D !important;
+      }
+		</style>
+	</head>
+	<body>
+	  <div id="map"></div>
+	  <!--<div class="tip">这个组件起初是用于环保系统，目的用于自动播放然后根据时间渲染地图各处的污染情况，由于数据量庞大有时自动播放时间到了没获取到数据或者没渲染完成，这时就可以对动画进行延迟，待渲染完成再继续动画</div>-->
+		<button id="pause">渲染未完成延迟动画</button>
+		<button id="play">渲染完成继续动画</button>
+		<div class="timeInfo">现在时间：<span></span></div>
+		<div id="timePlay"></div>
+	</body>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="js/timePlay.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=jsYegTciDRu9wK2LsfuuSGB5"></script>
+	<script type="text/javascript">
+		var timeplay = new TimePlay({
+			speed: 2000,//播放速度
+			startDate: new Date(2018,9,1),//开始日期
+			endDate: new Date(2018,10,11),//结束日期
+			currentData: new Date(),//初始化时间
+			backToday: true,//是否显示返回今天按钮
+			timeUnitControl: true ,//是否显示时/天切换控件
+			onClickChangeEnd: function(time){//点击后回调
+				//获取点击的时间
+				var hour = time.getHours(),//小时
+            day  = time.getDate(),//日
+            mon  = time.getMonth() + 1,//月
+            year = time.getFullYear();//年
+				var str = year +"年" + mon + "月" + day + "日" + hour + "时";
+        $(".timeInfo span").text(str)
+			},
+			onAnimateEnd: function(time){//时间轴动画每次结束回调
+				var hour = time.getHours(),//小时
+						day  = time.getDate(),//日
+						mon  = time.getMonth()+1,//月
+						year = time.getFullYear();//年
+			  var str = year +"年" + mon + "月" + day + "日" + hour + "时";
+				$(".timeInfo span").text(str);
+				map.clearOverlays();
+				for(var i = 0; i < 40; i++) {
+				  var x = (Math.floor(Math.random()*200000)+116300000)/1000000,
+				      y = (Math.floor(Math.random()*140000)+39850000)/1000000,
+				      point = new BMap.Point(x, y);
+				      console.log(x,y)
+				  var sCompOverlay = new ComplexCustomOverlay(point);
+          map.addOverlay(sCompOverlay);
+				}
+				
+			}
+		});
+		
+		$("#pause").click(function(){
+			timeplay.delayAnimation();//延迟动画
+		})
+		
+		$("#play").click(function(){
+			timeplay.continueAnimation();//继续动画
+		})
+		
+		//创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(116.409048,39.892657),13);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:0});
+      map.addControl(navControl);
+    }
+    //覆盖物
+    function ComplexCustomOverlay(point){
+      this._point = point;
+    }
+    ComplexCustomOverlay.prototype = new BMap.Overlay();
+    ComplexCustomOverlay.prototype.initialize = function(map){
+      this._map = map;
+      var div = this._div = document.createElement("div");
+      var val = Math.floor(Math.random()*500)
+      var x = val < 300 ? Math.ceil(val / 50) : 6;
+      var cname = "map-point color-" + x
+      console.log(val, x)
+      div.setAttribute('class', cname)
+      div.innerHTML = val;
+      var that = this;
+      map.getPanes().labelPane.appendChild(div);  
+      return div;
+    }
+    ComplexCustomOverlay.prototype.draw = function(){
+      var map = this._map;
+      var pixel = map.pointToOverlayPixel(this._point);
+      this._div.style.left = pixel.x + "px";
+      this._div.style.top  = pixel.y + "px";
+    }
+    var map;
+    initMap();
+	</script>
+</html>

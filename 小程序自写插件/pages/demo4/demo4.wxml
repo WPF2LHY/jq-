@@ -1,0 +1,3 @@
+<button bindtap='down_file'>下载</button>//用来触发下载函数的按钮
+<view><image src='{{img_l}}' bindtap="previewImage"></image></view>
+<view wx:if="{{num}}">下载进度:{{num}}</view>

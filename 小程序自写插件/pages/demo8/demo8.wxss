@@ -1,0 +1,145 @@
+/* pages/promulgate_car/promulgate_car.wxss */
+.body{
+  width: 100%;
+  height: 100%;
+  background-color: #F4F4F4 ;
+  overflow: hidden
+}
+.oen{
+  margin-top: 20rpx;
+}
+.content_box{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.content_box .content {
+  margin-left: 20rpx;
+  display: flex;
+  justify-content:  flex-start;
+  border-bottom: 1rpx solid #E5E5E5
+}
+.wcont{
+   margin-left: 20rpx;
+}
+.con_title{
+  width:30%;
+height:90rpx;
+line-height:90rpx;
+font-size:28rpx;
+color:#333333;
+}
+.wput{
+  font-size:26rpx;
+font-family:MicrosoftYaHei;
+color:rgba(153,153,153,1);
+line-height: 40rpx;
+}
+.content_box .content .con_title{
+  width: 30%;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 28rpx;
+  color: #333333;
+}
+.con_xing{
+  color: #F04444;
+  font-size: 28rpx;
+}
+.content_box .content input{
+  width: 70%;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #999999;
+  font-size: 28rpx;
+}
+.section{
+  font-size: 28rpx;
+  color: #333333;
+  background-color: #fff;
+  padding: 20rpx 0 20rpx 20rpx;
+  box-sizing: border-box;
+  /* width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1rpx solid #CCCCCC;
+  font-size: 35rpx; */
+}
+.section .section_title{
+  margin-bottom: 30rpx;
+}
+.section1{
+  margin-right: 20rpx;
+  width: 100%;
+  height: 90rpx;
+  border-bottom: 1rpx solid #E5E5E5;  
+}
+.arr_img{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+.btn-area{
+  margin-top: 100rpx;
+}
+.btn-area button{
+  background-color:#4D81E4;
+  border-radius: 0;
+  font-size: 30rpx;
+  color: #FFFFFF;
+}
+
+/*标志  */
+.wxhBox{
+  margin-left:20rpx;
+display:flex;
+justify-content:flex-start;
+border-bottom:1rpx solid #E5E5E5;
+}
+.wcont_r{
+  width: 370rpx;
+   /* display: flex;  */
+   /* justify-content: flex-start;  */
+   /* flex-wrap: wrap;  */
+   /* align-content: flex-start;  */
+  overflow: hidden;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+}
+.wtxt{
+  padding: 5rpx 10rpx;
+  border:2rpx solid #eee;
+  border-radius: 10rpx;
+  font-size:22rpx;
+ font-family:MicrosoftYaHei;
+ color:rgba(51,51,51,1);
+ margin: 5rpx;
+}
+.wxh_I{
+  width: 180rpx;
+}
+.fl{
+  float: left;
+}
+.wcont_r input{
+  display: inline-block;
+  width: 180rpx;
+  font-size:26rpx;
+font-family:MicrosoftYaHei;
+color:#333;
+}
+
+.wAdd{
+  width:80rpx;
+height:44rpx;
+background:#4D81E4;
+font-size:26rpx;
+font-family:MicrosoftYaHei;
+color:rgba(255,255,255,1);
+text-align: center;
+line-height: 44rpx;
+margin: 5rpx;
+}

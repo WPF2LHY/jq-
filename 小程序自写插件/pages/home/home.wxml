@@ -1,0 +1,117 @@
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="search" class="list-item between">搜索框
+  <image src='../../images/right.png'></image>
+</view>
+
+<!-- 222222222222222222222222 -->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="swiper" class="list-item between">轮播图
+  <image src='../../images/right.png'></image>
+</view>
+
+<!-- 3333333333333333333-->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="list" class="list-item between">列表
+  <image src='../../images/right.png'></image>
+</view>
+
+<!-- 444444444444444444444444 -->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="form" class="list-item between">表单
+  <image src='../../images/right.png'></image>
+</view>
+
+<!-- 555555555555555555555 -->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="screening" class="list-item between">筛选
+  <image src='../../images/right.png'></image>
+</view>
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="classify" class="list-item between">筛选页面
+  <image src='../../images/right.png'></image>
+</view>
+
+
+
+<!-- 666666666666666666666666666-->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="icon" class="list-item between">图标
+  <image src='../../images/right.png'></image>
+</view>
+
+
+
+<!-- 7777777777777777777777777777777-->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="file" class="list-item between">文件上传、下载
+  <image src='../../images/right.png'></image>
+</view>
+
+
+<!-- 888888888888888888888888888-->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="tab" class="list-item between">Tab切换
+  <image src='../../images/right.png'></image>
+</view>
+
+
+<!-- 999999999999999999999999999999-->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="Spinner" class="list-item between">数字加减Spinner
+  <image src='../../images/right.png'></image>
+</view>
+
+<!-- 10-->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="code" class="list-item between">微信密码样式
+  <image src='../../images/right.png'></image>
+</view>
+
+
+<!-- 11--sliding -->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="sliding" class="list-item between">提示文字滚动样式
+  <image src='../../images/right.png'></image>
+</view>
+
+<!-- 12-turnplate -->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="turnplate" class="list-item between">抽奖转盘-方形
+  <image src='../../images/right.png'></image>
+</view>
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="turnplate2" class="list-item between">抽奖转盘-圆形
+  <image src='../../images/right.png'></image>
+</view>
+
+<!-- 13--turntable -->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="turntable" class="list-item between">抽奖转盘-手写
+  <image src='../../images/right.png'></image>
+</view>
+<!-- 14 -->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="zp" class="list-item between">抽奖转盘-手写2
+  <image src='../../images/right.png'></image>
+</view>
+
+<!-- 15-foot -->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="foot" class="list-item between">底部样式-手写
+  <image src='../../images/right.png'></image>
+</view>
+
+<!-- 16-购物车滑动删除 -->
+<view class='h50'></view>
+<view bindtap="gotoPage" data-page="closeRight" class="list-item between">购物车滑动删除
+  <image src='../../images/right.png'></image>
+</view>
+
+
+
+
+
+
+<!-- <functional-page-navigator version="trial" name="loginAndGetUserInfo" bind:success="loginSuccess">
+  <button>登录到插件</button>
+</functional-page-navigator> -->

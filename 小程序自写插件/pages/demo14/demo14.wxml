@@ -1,0 +1,12 @@
+<!--用户授权  -->
+
+
+
+
+<view class='yong' wx:if='{{!hidden3 && canIUse}}'>
+  <view class='y_cont'>
+    <view class='y_title'>用户授权</view>
+     <button open-type="getUserInfo" type='primary' bindgetuserinfo="bindGetUserInfo">授权登录</button>
+     <view class='y_cont'>温馨提示：<br/>点击用户授权后,才能正常使用本产品的功能</view>
+  </view> 
+</view>

@@ -1,0 +1,145 @@
+/* 11 */
+.wlist{
+  width: 100%;
+  height: 300rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.wlist_l{
+  width: 210rpx;
+  height: 210rpx;
+  margin-right: 20rpx;
+}
+.wlist_l image.imgl{
+  width: 100%;
+  height: 100%;
+}
+.wlist_r{
+  width: 70%;
+}
+ .wh1{
+  width: 100%;
+  font-size: 32rpx;
+  color: #000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+.wcont{
+  font-size: 28rpx;
+  color: #444;
+  line-height: 42rpx;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
+  height: 80rpx;
+  overflow: hidden;
+}
+.wbuy{
+  font-size: 26rpx;
+  color: #999;
+  margin-top: 20rpx;
+}
+.wbuy .wbtn{
+  width: 120rpx;
+  height: 50rpx;
+  border-radius: 10rpx;
+  background: #f00;
+  color: #fff;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+/* 2222222222222222 */
+.wlist2{
+  width: 100%;
+}
+.wlist2_item{
+  width: 49.5%;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.wlist2_item .imgTop{
+  width: 100%;
+  height: 300rpx;
+}
+.wlist2_foot{
+  width: 100%;
+  padding: 20rpx;
+  background: #fff;
+  box-sizing: border-box;
+}
+/* 333333333333 */
+.wlist3{
+  width: 100%;
+  padding: 20rpx;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+}
+.wlist3 .wlist3_l{
+  font-size: 28rpx;
+  color: #444;
+}
+.wlist3 .wlist3_l image{
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 20rpx;
+}
+.wlist3 .wlist3_r{
+  font-size: 26rpx;
+  color: #999;
+}
+.wlist3 .wlist3_r image{
+  width: 25rpx;
+  height: 30rpx;
+  margin-left: 20rpx;
+}
+
+/* 4444444444 */
+.wlist4{
+  width: 100%;
+  padding:20rpx;
+  background: #fff;
+  /* height: 100rpx; */
+  box-sizing: border-box;
+}
+.wlist4_item{
+  width:20%;
+  color:#444;
+  font-size:28rpx;
+  text-align: center;
+}
+.wlist4_item image{
+  width:50rpx;
+  height:50rpx;
+  margin-bottom:10rpx
+}
+
+/* 55555555 */
+.wlist5{
+  width: 100%;
+  background: #fff;
+  border: 1px solid #eee;
+}
+.wlist5_item{
+  width: 25%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  font-size: 28rpx;
+  color: #444;
+}
+.wlist5_item:nth-child(4n+4){
+  border-right: none;
+}
+.wlist5_item image{
+  width: 50%;
+  height: 80rpx;
+  margin-bottom: 20rpx;
+}

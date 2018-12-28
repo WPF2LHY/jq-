@@ -1,0 +1,8 @@
+<view class='wlist4 wrap'>
+  <block wx:for="{{list}}" wx:key="i">
+    <view class='wlist4_item'>
+      <icon class='iconfont {{item}}'></icon>
+      <view>{{item}}</view>
+    </view>
+  </block>
+</view>

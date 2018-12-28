@@ -1,0 +1,93 @@
+<view class="wTab around">
+  <view class='wTab_item {{tabNum==0?"active":""}}' data-num='0' catchtap='Tab'>标题1</view>
+  <view class='wTab_item {{tabNum==1?"active":""}}' data-num='1' catchtap='Tab'>标题2</view>
+  <view class='wTab_item {{tabNum==2?"active":""}}' data-num='2' catchtap='Tab'>标题3</view>
+  <view class='wTab_item {{tabNum==3?"active":""}}' data-num='3' catchtap='Tab'>标题4</view>
+</view>
+
+
+
+
+<view class='h50'></view>
+<!-- swiper切换 -->
+
+<view class="weui-tab">
+
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{activeIndex==0?'active':''}}" bindtap="changeTab" data-index="0">抛售记录</view>
+    <view class="swiper-tab-item {{activeIndex==1?'active':''}}" bindtap="changeTab" data-index="1">购买记录</view>
+  </view>
+
+  <swiper current='{{activeIndex}}' bindchange="swiperTab">
+    <swiper-item>
+      <!-- list -->
+      <block wx:for="l" wx:key="i">
+        <view class='list'>
+          <view class='title'>
+            <text class='t_l'>大课股编号：14056</text>
+            <text class='t_r'>2018-8-23 14:12:12</text>
+          </view>
+          <view class='cont'>
+            <image src='../../images/tupian.png' class='c_img'></image>
+            <view class='cont_r'>
+              <view class='r_title'>开门红大课股（股权智慧研讨会）</view>
+              <view class='r_cont'>大课股介绍：华为是全球领先的ICT（信息与通信）基础设施和智能终端提供商，致力于把数字世界带入每个人、每个家庭、每个组织，构建万物互联的智能世界。我们在通信网络、IT、智能终端和云服务等领域为</view>
+              <view class='r_foot'>
+                <text class='f_left'>大课股价格：<text>1000元/每</text></text>
+                <text class='f_left'>库存：100</text>
+              </view>
+            </view>
+          </view>
+          <!-- 购买 -->
+          <view class='buyBox'>
+            <view class='b_left'>已售：
+              <text>10</text>
+            </view>
+            <view class='b_right'>库存：100</view>
+          </view>
+        </view>
+      </block>
+
+    </swiper-item>
+    <swiper-item>
+      <!-- list -->
+      <block wx:for="li" wx:key="i">
+        <view class='list'>
+          <view class='title'>
+            <text class='t_l'>大课股编号：14056</text>
+            <text class='t_r'>2018-8-23 14:12:12</text>
+          </view>
+          <view class='cont'>
+            <image src='../../images/tupian.png' class='c_img'></image>
+            <view class='cont_r'>
+              <view class='r_title'>开门红大课股（股权智慧研讨会）</view>
+              <view class='r_cont'>大课股介绍：华为是全球领先的ICT（信息与通信）基础设施和智能终端提供商，致力于把数字世界带入每个人、每个家庭、每个组织，构建万物互联的智能世界。我们在通信网络、IT、智能终端和云服务等领域为</view>
+              <view class='r_foot'>
+                <text class='f_left'>大课股价格：<text>1000元/每</text></text>
+                <text class='f_left'>库存：100</text>
+              </view>
+            </view>
+          </view>
+          <!-- 购买 -->
+          <view class='buyBox'>
+            <view class='b_left'>已售：
+              <text>10</text>
+            </view>
+            <view class='b_right'>库存：100</view>
+          </view>
+        </view>
+      </block>
+    </swiper-item>
+  </swiper>
+</view>
+
+
+<view class='h50'></view>
+<!-- 33333333333333333 -->
+<!-- 
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{activeIndex==0?'active':''}}" bindtap="changeTab" data-index="0">抛售记录</view>
+    <view class="swiper-tab-item {{activeIndex==1?'active':''}}" bindtap="changeTab" data-index="1">购买记录</view>
+     <view class="swiper-tab-item {{activeIndex==2?'active':''}}" bindtap="changeTab" data-index="2">购买记录</view>
+     <view class="swiper-tab-item {{activeIndex==2?'active':''}}" bindtap="changeTab" data-index="2">购买记录</view>
+  </view> -->

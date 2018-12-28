@@ -1,0 +1,8 @@
+<view class='Code_container'>
+  <view class='Code_wrap start'>
+    <block wx:for='{{dataSource}}' wx:key='this'>
+      <input type='number' class='Code_input' bindtap='onTapFocus' type='{{showType}}' disabled value='{{item.initValue}}'></input>
+    </block>
+    <input type='number' maxlength='6' focus='{{isFocus}}' class='Code_hidden-input' bindinput='mobileInput'></input>
+  </view>
+</view>

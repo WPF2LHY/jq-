@@ -1,0 +1,40 @@
+<!-- nav111111111111111111111111111111 -->
+<view class='wall_nav'>
+  <view class='wnav_item {{num==1?"active":""}}' data-num='1' catchtap='navBtn'>默认</view>
+  <view class='wnav_item {{num==2?"active":""}}' data-num='2' catchtap='navBtn'>新品</view>
+  <view class='wnav_item {{num==3?"active":""}}' data-num='3' catchtap='xlImg'>
+    <view class='win_item'>
+      <text> 销量</text>
+      <image src='{{img1}}'></image>
+    </view>
+  </view>
+  <view class='wnav_item {{num==4?"active":""}}' data-num='4' catchtap='tbImg'>
+    <view class='win_item'>
+      <text> 价格</text>
+      <image src='{{img2}}'></image>
+    </view>
+  </view>
+</view>
+
+
+<!-- 222222222222222222222222222222 -->
+
+<view class='wrap start'>
+  <view class='wscreen_l'>
+    <block wx:for="111111111111111111111111111" wx:key="i">
+      <view class='wl_item {{index1==index?"active":""}}' data-index="{{index}}" catchtap='leftlist'>left标题</view>
+    </block>
+  </view>
+  <view class="wscreen_r">
+
+    <view class='wlist5 start_wrap'>
+      <block wx:for="list12222222222222222222222222" wx:key="i">
+        <view class='wlist5_item'>
+          <image src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1537605353&di=4d968e7014a8d3b220196cfb7ca41f24&src=http://pic.qiantucdn.com/58pic/22/07/69/57b40b8f80f23_1024.jpg'></image>
+          <view>标题1</view>
+        </view>
+      </block>
+    </view>
+
+  </view>
+</view>

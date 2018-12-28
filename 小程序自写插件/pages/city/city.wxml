@@ -1,0 +1,10 @@
+<view class="section">
+  <view class="section__title">多列选择器</view>
+  <picker mode="multiSelector" bindchange="bindChange" 
+  bindcolumnchange="bindColumnChange" value="{{multiIndex}}" range="{{region}}" >
+    <view class="picker">
+      当前选择：
+      {{select[0]}}{{select[1]}}
+    </view>
+  </picker>
+</view>

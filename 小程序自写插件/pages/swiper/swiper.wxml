@@ -1,0 +1,41 @@
+<!--pages/swiper/swiper.wxml-->
+<swiper indicator-dots="true" autoplay="true" circular="true" skip-hidden-item-layout="true" indicator-color="#eee" indicator-active-color="#f00" class='wSwiper'>
+  <block wx:for="{{imgUrls}}" wx:key="i">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+
+
+<view class='h50'>横向滑动</view>
+
+<!--横向滑动-->
+<view class='whcon-cont'>
+  <scroll-view class="whcon-navbar" scroll-x="true">
+    <view class='whcon-view' wx:for="{{conArr}}" wx:key="*this">
+      <text>{{item.mon}}</text>
+      <text class='whslow'>{{item.name1}}</text>
+      <text class='whslow'>{{item.name2}}</text>
+      <text class='whslow'>{{item.name3}}</text>
+    </view>
+  </scroll-view>
+</view>
+
+<!--横向滑动-->
+<view class='whcon-cont'>
+  <scroll-view class="whcon-navbar" scroll-x="true">
+    <view class='whcon-view' wx:for="conAr" wx:key="*this">
+      <image class='whImg' src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+      <view class='whin_cont between'>
+        <view class='whin_l'>111111111</view>
+        <view class='whin_l'>111111111</view>
+      </view>
+      <view class='whin_cont between'>
+        <view class='whin_l'>111111111</view>
+        <view class='whin_anr'>按钮</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

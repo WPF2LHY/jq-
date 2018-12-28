@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>滚动导航</title>
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.headv {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 140px;
+			z-index: 10;
+		}
+		
+		.headv>div {
+			float: left;
+			padding: 20px;
+			cursor: pointer;
+		}
+		
+		.headv-check {
+			border-bottom: 1px solid red;
+		}
+	</style>
+
+	<body>
+		<div class="x12 headv">
+			<div>导航1</div>
+			<div>导航2</div>
+			<div>导航3</div>
+			<div>导航4</div>
+			<div>导航5</div>
+		</div>
+		<div class="x12 nav-list">
+			<div class="nav1 x12" style="background: #24978a;height: 500px;"></div>
+			<div class="nav2 x12" style="background: #323348;height: 800px;"></div>
+			<div class="nav3 x12" style="background: #fffd8c;height: 1000px;"></div>
+			<div class="nav4 x12" style="background: #fd9a75;height: 500px;"></div>
+			<div class="nav5 x12" style="background: #e64a58;height: 1200px;"></div>
+		</div>
+	</body>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="hScroll.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//初始化
+		new hScroll({
+			nav1: '.headv>div', //导航对应的元素
+			nav2: '.nav-list>div', //监听的元素
+			checkClass: 'headv-check' //选中的样式
+		});
+	</script>
+
+</html>

@@ -1,0 +1,23 @@
+<view class='h50'>图片上传</view>
+
+<!-- 图片 -->
+<view class="wimgs start_wrap">
+  <view class='wimgs_item' catchtap='getImgs'>
+    <icon class='iconfont icon-plus-with-border'></icon>
+  </view>
+  <view class='wimgs_item' wx:for="{{imgArr}}" wx:key="i">
+    <image src='{{item}}'></image>
+  </view>
+</view>
+
+<view class='h50'>视频上传</view>
+<!-- 视频 -->
+<view class="wimgs start_wrap">
+  <view class='wimgs_item' catchtap='getVideo'>
+    <icon class='iconfont icon-plus-with-border'></icon>
+  </view>
+  <view class='wimgs_item' hidden='{{flagVideo}}'>
+     <icon class='iconfont icon-ship end'></icon>
+    <image src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+  </view>
+</view>

@@ -1,0 +1,29 @@
+/*具体  */
+.she_list{
+  width: 100%;
+  background: #fff;
+  padding: 0 30rpx;
+  height: 92rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2rpx solid #eee;
+  font-size:28rpx;
+font-family:MicrosoftYaHei;
+color:rgba(51,51,51,1);
+}
+
+.she_rimg{
+  width:16rpx;
+height:25rpx;
+}
+.mB20{
+  margin-bottom: 20rpx;
+}
+
+/*客服  */
+
+.cs_button::after{
+   border: none
+}

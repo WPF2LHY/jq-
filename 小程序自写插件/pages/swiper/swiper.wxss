@@ -1,0 +1,67 @@
+/* pages/swiper/swiper.wxss */
+.wSwiper{
+  width:100%;
+  height:300rpx;
+}
+.wSwiper image.slide-image{
+	width:100%;
+  height: 100%;
+}
+
+
+/*  */
+.whcon-cont{
+   width: 100%;
+  overflow: hidden;
+  background: #fff;
+   margin-top: 10rpx;
+}
+.whcon-navbar{
+  white-space: nowrap; 
+  display: flex;
+  overflow: auto;  
+}
+.whcon-view{
+  /* width: 400rpx; */
+  /* height: 200rpx; */
+  background: orange;
+  margin: 10rpx 20rpx;
+  display: inline-block;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.whcon-view text{
+  font-size: 42rpx;
+  color: #fff;
+  display: block;
+  margin-left: 25rpx;
+}
+.whcon-view .whslow{
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+
+
+/* 222222222 */
+.whcon-view .whImg{
+  width: 200px;
+  height: 400rpx;
+  vertical-align: top;
+}
+.whcon-view .whin_cont{
+  height: 50rpx;
+  color: #999;
+}
+.whin_cont .whin_l{
+  font-size: 26rpx;
+}
+.whin_cont .whin_anr{
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: #f00;
+  color: #fff;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+}

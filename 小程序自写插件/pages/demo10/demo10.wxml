@@ -1,0 +1,11 @@
+ <!--优惠劵  -->
+  <view class='con-cont'>
+    <scroll-view class="con-navbar" scroll-x="true">
+      <view class='con-view' wx:for="{{conArr}}" wx:key="*this">
+        <text>{{item.mon}}</text>
+        <text class='slow'>{{item.name1}}</text>
+        <text class='slow'>{{item.name2}}</text>
+        <text class='slow'>{{item.name3}}</text>
+      </view>
+    </scroll-view>
+  </view>

@@ -1,0 +1,11 @@
+<button catchtap='getAddress'>设置收货地址</button>
+
+<view class="container">收货人姓名:{{userName}}</view>
+<view class="container">邮编:{{postalCode}}</view>
+<view class="container">省：{{provinceName}}</view>
+
+<view class="container">市：{{cityName}}</view>
+<view class="container">区：{{countyName}}</view>
+<view class="container">详细收货地址信息：{{detailInfo}}</view>
+<view class="container">收货地址国家码：{{nationalCode}}</view>
+<view class="container">收货人手机号码：{{telNumber}}</view>

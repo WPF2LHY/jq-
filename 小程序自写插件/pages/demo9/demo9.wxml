@@ -1,0 +1,14 @@
+<view class='she_list mB20' bindtap='keFu'>
+  <text>联系客服</text>
+  <image src='../../images/right.png' class='she_rimg'></image>
+</view>
+
+<button class="cs_button she_list mB20" open-type="contact" session-from="weapp">
+  <text>联系客服</text>
+  <image src='../../images/right.png' class='she_rimg'></image>
+</button>
+
+<button class="cs_button she_list mB20" catchtap='luyin'>
+  <text>录音</text>
+  <image src='../../images/right.png' class='she_rimg'></image>
+</button>

@@ -1,0 +1,22 @@
+<view class='h50'></view>
+<!-- 1111111111111111 -->
+<view class='spinner'>
+  <text>抛售数量</text>
+  <view class='spinner_r'>
+    <text catchtap='spinnerJian'>-</text>
+    <input value='{{num}}'></input>
+    <text catchtap='spinnerJia'>+</text>
+  </view>
+</view>
+
+
+
+
+<!-- 222222222 -->
+<view class='h50'></view>
+
+<view class='spinner_r'>
+  <text catchtap='spinnerJian'>-</text>
+  <input value='{{num}}'></input>
+  <text catchtap='spinnerJia'>+</text>
+</view>

@@ -1,0 +1,35 @@
+<!-- foot -->
+<template name="Ftabber">
+<view class='Ftabber between'>
+  <navigator hover-class='none' open-type='redirect'>
+    <view class='Ftabber_item'>
+      <image src='{{img1}}' class='Flogo1'></image>
+      <view>首页</view>
+    </view>
+  </navigator>
+  <navigator hover-class='none' open-type='redirect'>
+    <view class='Ftabber_item'>
+      <image src='{{img2}}' class='Flogo2'></image>
+      <view>渔获</view>
+    </view>
+  </navigator>
+  <navigator hover-class='none' open-type='redirect'>
+    <view class='Ftabber_item'>
+      <image src='../../images/add.png' class='Fmid'></image>
+    </view>
+  </navigator>
+  <navigator hover-class='none' open-type='redirect'>
+    <view class='Ftabber_item'>
+      <image src='{{img4}}' class='Flogo3'></image>
+      <view>商城</view>
+    </view>
+  </navigator>
+  <navigator hover-class='none' open-type='redirect'>
+    <view class='Ftabber_item'>
+      <image src='{{img5}}' class='Flogo4'></image>
+      <view>我的</view>
+    </view>
+  </navigator>
+</view>
+</template>
+<template is="Ftabber" data="{{...FootArr}}"/>

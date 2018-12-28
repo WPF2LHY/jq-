@@ -1,0 +1,116 @@
+<!--pages/promulgate_car/promulgate_car.wxml-->
+<view class='body'>
+  <form bindsubmit="formSubmit">
+    <view class='oen'>
+      <!-- <block wx:for="{{list}}" wx:key='id'> -->
+        <view class='content_box'>
+          <view class='content'>
+            <text class='con_title'><text class='con_xing'>*</text> 公司名称：</text>
+            <input name='gs' placeholder='郑州闪创'></input>
+          </view>
+        </view>
+         <view class='content_box'>
+          <view class='content'>
+            <text class='con_title'><text class='con_xing'>*</text> 公司座机：</text>
+            <input name='gs' placeholder='0371-11111111'></input>
+          </view>
+        </view>
+         <view class='content_box'>
+          <view class='content'>
+            <text class='con_title'><text class='con_xing'>*</text> 公司所在地：</text>
+            <input name='gs' placeholder='河南郑州市'></input>
+          </view>
+        </view>
+
+         <view class='content_box'>
+          <view class='content'>
+            <text class='con_title'><text class='con_xing'>*</text>详细地址： </text>
+            <input name='gs' placeholder='河南郑州市中原区'></input>
+          </view>
+        </view>
+        <view class='content_box'>
+          <view class='content'>
+            <text class='con_title'>客服电话： </text>
+            <input name='gs' placeholder='0371-11111111'></input>
+          </view>
+        </view>
+         <view class='content_box'>
+          <view class='content'>
+            <text class='con_title'>理赔申报电话： </text>
+            <input name='gs' placeholder='0371-11111111'></input>
+          </view>
+        </view>
+      <!-- </block> -->
+    </view>
+
+    <view class='oen'>
+       <view class='content_box'>
+          <view class='content'>
+            <text class='con_title'><text class='con_xing'>*</text>联系人： </text>
+            <input name='gs' placeholder='王丫丫'></input>
+          </view>
+        </view>
+         <view class='content_box'>
+          <view class='content'>
+            <text class='con_title'><text class='con_xing'>*</text>联系电话： </text>
+            <input name='gs' placeholder='0371-11111111'></input>
+          </view>
+        </view>
+    </view>
+
+  <!-- 上传图片 -->
+   <view class="section oen">
+    <view class="section_title">公司形象照：</view>
+    <view bindtap='arrImgs'>
+       <image src='../../images/upload_img@2x.png' class='arr_img'></image>
+       <block wx:for="{{arrImg}}" wx:key="index">
+          <image src='{{item}}' class='arr_img'></image>
+       </block>
+    </view>
+  </view>
+  <!-- 上传图片end -->
+    <view class='oen'>
+        <view class='content_box'>
+          <view class='wxhBox'>
+            <text class='con_title'>代理品牌：</text>
+            <view class='wcont_r'>
+                 <block wx:for="{{list}}" wx:key="index"> 
+                    <view class='wtxt fl' data-id="{{index}}" bindtap='clearArr'>{{item}} <icon type="clear" size="10" color="#333"/></view>
+                 </block> 
+                 <input name='' class='fl' placeholder='请输入代理品牌' value='{{txt}}' bindblur="setInput" id="wxh_I"></input>
+                 <view class='fl wAdd' bindtap='InputAdd'>添加</view>
+            </view>
+          </view>
+        </view>
+        <!--****************22222222***************  -->
+         <view class='content_box'>
+          <view class='wxhBox'>
+            <text class='con_title'>服务内容：</text>
+            <view class='wcont_r'>
+                 <block wx:for="{{list1}}" wx:key="index"> 
+                    <view class='wtxt fl' data-id="{{index}}" bindtap='clearArr1'>{{item}} <icon type="clear" size="10" color="#333"/></view>
+                 </block> 
+                 <input name='' class='fl' placeholder='请输入代理品牌' value='{{txt1}}' bindblur="setInput1" id="wxh_I"></input>
+                 <view class='fl wAdd' bindtap='InputAdd1'>添加</view>
+            </view>
+          </view>
+        </view>
+
+
+
+
+        <view class='content_box'>
+           <view class='wcont'> 
+            <text class='con_title'>公司简介：</text>
+            <textarea type="text" class='wput'>1111</textarea>
+           </view> 
+        </view>
+    </view>
+
+
+    <view class="btn-area">
+      <button formType="submit">保存</button>
+    </view>
+  </form>
+<!--body end  -->
+</view>

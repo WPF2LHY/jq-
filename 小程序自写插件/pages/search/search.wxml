@@ -1,0 +1,36 @@
+<view class='h50'></view>
+
+
+<!-- 普通search -->
+<view class="w_search start">
+  <icon type='search' size='20'></icon>
+  <input type='text' confirm-type="search" placeholder='请输入搜索的内容' class='w_input'></input>
+</view>
+
+
+
+<view class='h50'></view>
+
+
+<!-- 带内置取消的search -->
+<view class='w_search start'>
+  <icon type='search' size='20'></icon>
+  <view class='wsearch_r between'>
+     <input type='text' confirm-type="search" placeholder='请输入搜索的内容' class='w_input' bindinput="wSearch" value='{{wValue}}'></input>
+     <icon type="clear" size='15' color='#444' hidden='{{clear}}' catchtap='wClose'></icon>
+  </view>
+</view>
+
+<view class='h50'></view>
+
+<!--  带外置取消的search -->
+<view class='wsearch between'>
+  <view class='w_search start'>
+    <icon type='search' size='20'></icon>
+    <view class='wsearch_r between'>
+      <input type='text' confirm-type="search" placeholder='请输入搜索的内容' class='w_input' bindinput="wSearch" value='{{wValue}}'></input>
+      <icon type="clear" size='15' color='#444' hidden='{{clear}}' catchtap='wClose'></icon>
+    </view>
+  </view>
+  <view class='wsearch_out' catchtap='wCloseout'>取消</view>
+</view>

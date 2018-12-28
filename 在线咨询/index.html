@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jquery带关闭、打开、微信、返回顶部功能的在线客服特效</title>
+<link rel="stylesheet" type="text/css" href="css/page.css" >
+</head>
+<body style="height:2000px;">
+
+
+<div class="main-im">
+  <div id="open_im" class="open-im"></div>  
+  <div class="im_main" id="im_main">
+    <div id="close_im" class="close-im"><a href="javascript:void(0);" title="点击关闭"></a></div>
+    <a href="http://qm.qq.com/cgi-bin/qm/qr?k=5rxYrnOpyQ_f-pQ4fQnxWUnbW3S7c54I&auth=a2295b178ca0409035a715db65a0c2625b97ad8b46920461ecb6daa3987bc0b9849d5c33f6348318" class="im-qq qq-a" title="在线QQ客服">
+    <div class="qq-container"></div>
+    <div class="qq-hover-c"><img class="img-qq" src="images/qq.png"></div>
+    <span> QQ在线咨询</span> </a>
+    <div class="im-tel">
+      <div>免费咨询热线</div>
+      <div class="tel-num">400-777-1218</div>
+    </div>
+    <div class="im-footer" style="position:relative">
+      <div class="weixing-container">
+        <div class="weixing-show">
+           <div class="weixing-txt">获得更多惊喜</div>
+          <img class="weixing-ma" src="http://www.jq-school.com/images/weixin_code.jpg">
+          <div class="weixing-sanjiao"></div>
+          <div class="weixing-sanjiao-big"></div>
+        </div>
+      </div>
+      <div class="go-top"><a href="javascript:;" title="返回顶部"></a> </div>
+	 <div style="clear:both"></div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script>
+$(function(){
+	$('#close_im').bind('click',function(){
+		$('#main-im').css("height","0");
+		$('#im_main').hide();
+		$('#open_im').show();
+	});
+	$('#open_im').bind('click',function(e){
+		$('#main-im').css("height","272");
+		$('#im_main').show();
+		$(this).hide();
+	});
+	$('.go-top').bind('click',function(){
+		$(window).scrollTop(0);
+	});
+	$(".weixing-container").bind('mouseenter',function(){
+		$('.weixing-show').show();
+	})
+	$(".weixing-container").bind('mouseleave',function(){        
+		$('.weixing-show').hide();
+	});
+});
+</script>
+</body>
+</html>

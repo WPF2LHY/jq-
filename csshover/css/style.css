@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 14px;
+	background: rgba(0,0,0,0.8);
+	color: #555;
+}
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+.container-div1{
+	margin-top: 50px;
+	background: #fff;
+	height: 500px;
+}
+.z-btn{
+	margin-top: 10px;
+	overflow: hidden;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	background: #019067;
+	text-align: center;
+	margin-left: 20px;
+	color: #fff;
+	position: relative;
+	top:15px;
+	float: left;
+}
+.z-btn1{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	background: #019067;
+	text-align: center;
+	margin-left: 20px;
+	color: #fff;
+	position: relative;
+	top:15px;
+	float: left;
+}
+.z-btn2{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	background: #019067;
+	text-align: center;
+	margin-left: 20px;
+	color: #fff;
+	position: relative;
+	top:15px;
+	float: left;
+}
+.z-btn3{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	background: #019067;
+	text-align: center;
+	margin-left: 20px;
+	color: #fff;
+	position: relative;
+	top:15px;
+	float: left;
+}
+.z-btn4{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	background: #019067;
+	text-align: center;
+	margin-left: 20px;
+	color: #fff;
+	position: relative;
+	top:15px;
+	float: left;
+}
+
+.z-btn5{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	background: #019067;
+	text-align: center;
+	margin-left: 20px;
+	color: #fff;
+	position: relative;
+	top:15px;
+	float: left;
+}
+
+.z-btn6{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	background: #019067;
+	text-align: center;
+	margin-left: 20px;
+	color: #fff;
+	position: relative;
+	top:15px;
+	float: left;
+}
+
+.z-btn7{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	background: #019067;
+	text-align: center;
+	margin-left: 20px;
+	color: #fff;
+	position: relative;
+	top:15px;
+	float: left;
+}
+
+.z-btn8{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	background: #019067;
+	text-align: center;
+	margin-left: 20px;
+	color: #fff;
+	position: relative;
+	top:15px;
+	float: left;
+}
+
+.z-btn9{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	background: #019067;
+	text-align: center;
+	margin-left: 20px;
+	color: #fff;
+	position: relative;
+	top:15px;
+	float: left;
+}
+
+.z-btn10{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	background: #019067;
+	text-align: center;
+	margin-left: 20px;
+	color: #fff;
+	position: relative;
+	top:15px;
+	float: left;
+}

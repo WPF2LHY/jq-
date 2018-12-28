@@ -1,0 +1,16 @@
+.mt20 {
+    margin-top: 20rpx;
+}
+.list-item {
+    height: 80rpx;
+    /* line-height: 60rpx; */
+    /* text-indent: 30rpx; */
+    background: #fff;
+    padding: 20rpx;
+    box-sizing: border-box;
+    font-size: 30rpx;
+}
+.list-item image{
+  width: 25rpx;
+  height: 30rpx;
+}

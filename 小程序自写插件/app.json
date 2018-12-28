@@ -1,0 +1,69 @@
+{
+  "pages": [
+    
+    "pages/home/home",
+    "pages/search/search",
+    "pages/swiper/swiper",
+    "pages/list/list",
+    "pages/form/form",
+    "pages/screening/screening",
+    "pages/tab/tab",
+    "pages/icon/icon",
+    "pages/file/file",
+    "pages/Spinner/Spinner",
+    "pages/code/code",
+    "pages/classify/classify",
+    "pages/sliding/sliding",
+    "pages/turnplate/turnplate",
+    "pages/turnplate2/turnplate2",
+    "pages/zp/zp",
+    "pages/turntable/turntable",
+    "pages/foot/foot",
+    "pages/closeRight/closeRight",
+    "pages/index/index",
+    "pages/demo1/demo1",
+    "pages/demo2/demo2",
+    "pages/demo3/demo3",
+    "pages/demo4/demo4",
+    "pages/demo5/demo5",
+    "pages/demo6/demo6",
+    "pages/demo7/demo7",
+    "pages/demo8/demo8",
+    "pages/demo9/demo9",
+    "pages/demo10/demo10",
+    "pages/demo11/demo11",
+    "pages/demo12/demo12",
+    "pages/demo13/demo13",
+    "pages/demo14/demo14",
+    "pages/demo15/demo15",
+    "pages/position/position",
+    "pages/demo16/demo16",
+    "pages/city/city"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "插件",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#444444",
+    "selectedColor": "#2990FF",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "iconPath": "images/toutiao.png",
+        "selectedIconPath": "images/toutiao2.png",
+        "pagePath": "pages/home/home",
+        "text": "主页"
+      },
+      {
+        "iconPath": "images/geren.png",
+        "selectedIconPath": "images/geren2.png",
+        "pagePath": "pages/index/index",
+        "text": "个人"
+      }
+    ]
+  }
+}

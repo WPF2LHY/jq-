@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script>
+        $(function(){
+            //锚点跳转滑动效果
+            $('a[href*=#],area[href*=#]').click(function() {
+                console.log(this.pathname)
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var $target = $(this.hash);
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                    if ($target.length) {
+                        var targetOffset = $target.offset().top;
+                        $('html,body').animate({
+                                    scrollTop: targetOffset
+                                },
+                                1000);
+                        return false;
+                    }
+                }
+            });
+        })
+    </script>
+    <style type="text/css" media="screen">
+         *{
+			 margin: 0;
+			 padding: 0;
+		 }
+        .mk{width:100%;text-align:center;margin: 0 auto;}
+        .evt_nav_right{position:fixed;top:100px;right:10px;width:100px;}
+        .evt_nav_right a{display:inline-block;width:100px;}
+    </style>
+</head>
+<body>
+    <div class="evt_nav_right" style="visibility: visible;">
+        <a ytag="20054" href="#mk01" class="evt_link1" title="1" >1</a>
+        <a ytag="20055" href="#mk02" class="evt_link2" title="2" >2</a>
+        <a ytag="20056" href="#mk03" class="evt_link3" title="3" >3</a>
+        <a ytag="20057" href="#mk04" class="evt_link4" title="4">4</a>
+        <a ytag="20058" href="#mk05" class="evt_link5" title="5" >5</a>
+        <a ytag="20059" href="javascript:void(0);" class="evt_link0" title="返回顶部">
+          6  
+        </a>
+    </div>
+ 
+    <div class="mk" id="mk01" style="background: red;height:200px;">内容1</div>
+    <div class="mk" id="mk02" style="background: green;height:300px;">内容2</div>
+    <div class="mk" id="mk03" style="background: pink;height:400px;">内容3</div>
+    <div class="mk" id="mk04" style="background: orange;height:200px;">内容4</div>
+    <div class="mk" id="mk05" style="background: blue;height:500px;">内容5</div>
+</body>
+</html>

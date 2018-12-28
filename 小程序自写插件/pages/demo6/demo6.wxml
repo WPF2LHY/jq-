@@ -1,0 +1,4 @@
+
+<button catchtap='chuanImg1'>点击</button>
+<image src="{{arrImg}}" catchtap='previewImage'></image>
+<view>{{txt}}</view>

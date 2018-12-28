@@ -1,0 +1,111 @@
+<view class='classify'>
+<!--头部搜锁  -->
+<!-- <view class='suoBox'>
+  <view class='suo_l'>
+     <icon type="search" size="20" color="#6A6A6A"/>
+     <input placeholder='请输入搜索关键词' type="text" class='s_input' />
+  </view>
+  <text class='suo_r'>取消</text>
+</view> -->
+<!--nav导航  -->
+<view class='navBox'>
+  <text class='nav_l {{numNav==1?"nav_active":""}}' data-num='1' catchtap='all'>全部</text>
+  <view class='nav_r'>
+    <view class='navr_list {{numNav==2?"nav_active":""}}' data-num='2' catchtap='pintuan'>
+        <text>拼团</text>
+    </view>
+    <view class='navr_list {{numNav==3?"nav_active":""}}' data-num='3' bindtap='tbImg'>
+        <text>价格</text>
+        <image src='{{jImg}}' class='navr_img'></image>
+    </view>
+    <view class='navr_list {{numNav==4?"nav_active":""}}' data-num='4' bindtap='xlImg'>
+        <text>销量</text>
+        <image src='{{jImg1}}' class='navr_img'></image>
+    </view>
+    <view class='navr_list' bindtap="clickAppear">
+        <text>筛选</text>
+    </view>
+  </view>
+
+  <!--筛选   -->
+</view>
+
+<!-- 商品列表 -->
+<view class='list'>
+ <block wx:for="list" wx:key="i">
+  <navigator hover-class='none'  class='list_item'>
+    <view>
+      <image src='http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg' class='item_img'></image>
+      <view class='item_cont'>
+        <view class='item_title'>创意星座杯子陶瓷马克杯带盖勺办公室大容量水杯家用咖啡杯泡</view>
+        <view class='item_foot'><text class='item_m'>￥16.90</text><text>已拼18万件</text></view>
+      </view>
+    </view>
+    </navigator>
+  </block>
+</view>
+
+  <!-- 空白条 -->
+  <view class='classify-bai'></view>
+  
+  <!-- 背景灰 -->
+  <view class='{{showView?"classify-hui":"tanHide"}}' bindtap="clickHide"></view>
+  <!-- 筛选弹框 -->
+  <view class='{{showView?"classify-choose":"tanHide"}}'>
+    <view class='classify-choose-top'>
+      <!-- 品牌 -->
+      <view class='classify-choose-top-brand'>
+        <view class='classify-choose-top-brand1'>品牌</view>
+        <view class='classify-choose-top-brand2'>
+          <block wx:for="{{brandList}}" wx:key="{{xxx}}" wx:for-index="i">
+            <text bindtap="brandSelection" class="{{currentItem==item.id?'is_checked':'normal'}}" data-id="{{item.id}}" data-brand="{{item.brand}}">{{item.brand}}</text>
+          </block>
+        </view> 
+      </view>
+      <!-- 空调种类 -->
+      <view class='classify-choose-top-type'>
+        <view class='classify-choose-top-type1'>空调种类</view>
+        <view class='classify-choose-top-type2'>
+          <block wx:for="{{typeList}}" wx:key="{{xxx}}" wx:for-index="i">
+            <text bindtap="typeSelection" class="{{typeItem==item.id?'is_checked':'normal'}}" data-id="{{item.id}}" data-type="{{item.type}}">{{item.type}}</text>
+          </block>
+        </view>
+      </view>
+      <!-- 分类 -->
+      <view class='classify-choose-top-type'>
+        <view class='classify-choose-top-type1'>分类</view>
+        <view class='classify-choose-top-type2'>
+          <block wx:for="{{classifyList}}" wx:key="{{xxx}}" wx:for-index="i">
+            <text bindtap="classifySelection" class="{{classifyItem==item.id?'is_checked':'normal'}}" data-id="{{item.id}}" data-type="{{item.type}}">{{item.type}}</text>
+          </block>
+        </view>
+      </view>
+      <!-- 频率 -->
+      <view class='classify-choose-top-type'>
+        <view class='classify-choose-top-type1'>频率</view>
+        <view class='classify-choose-top-type2'>
+          <block wx:for="{{frequencyList}}" wx:key="{{xxx}}" wx:for-index="i">
+            <text bindtap="frequencySelection" class="{{frequencyItem==item.id?'is_checked':'normal'}}" data-id="{{item.id}}"  data-frequency="{{item.type}}">{{item.type}}</text>
+          </block>
+        </view>
+      </view>
+      <!-- 功率 -->
+      <view class='classify-choose-top-type'>
+        <view class='classify-choose-top-type1'>功率</view>
+        <view class='classify-choose-top-type2'>
+          <block wx:for="{{powerList}}" wx:key="{{xxx}}" wx:for-index="i">
+            <text bindtap="powerSelection" class="{{powerItem==item.id?'is_checked':'normal'}}" data-id="{{item.id}}" data-level="{{item.type}}">{{item.type}}</text>
+          </block>
+        </view>
+      </view>
+    </view>
+    <view class='classify-choose-bottom'>
+      <view>
+        <text class='classify-choose-bottom-input1'>重置</text>
+      </view>
+      <view>
+        <text class='classify-choose-bottom-input2' bindtap="clickHide">确定</text>
+      </view>
+    </view>
+  </view>
+</view>

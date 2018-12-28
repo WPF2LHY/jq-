@@ -1,0 +1,48 @@
+<!--没有商品时  -->
+<view wx:if="{{shuArr.length<=0?true:false}}" class='v-show'>
+  <image src='../../images/cart.png' class='f-img'></image>
+  <text>空空如野，快去购物吧。</text>
+  <button class='f-btn' size='mini' type='primary' bindtap='toHome'>逛一逛</button>
+</view>
+<!--有商品时  -->
+<view wx:else>
+  <view class='e-top'>
+    <text>微商城</text>
+    <text style='color:"#ddd"' hidden='{{hidden}}' bindtap='changeTab'>编辑</text>
+    <text style='color:"#ddd"' hidden='{{!hidden}}' bindtap='changeTab'>删除</text>
+  </view>
+  <!--数据  -->
+  <block wx:for="{{shuArr}}" wx:key="index">
+    <view class='shuJv' catchtap='tianjia' data-index="{{index}}">
+      <image src='{{item.flagImg ?"../../images/gou-red.png": "../../images/gou.png"}}' class='gou-img'></image>
+      <image src='../../images/img/8.jpg' class='shop-gou-img'></image>
+      <view class='shop-v'>
+        <text>美女</text>
+        <view class='shop-txt'>
+          <text>三围:110</text>
+          <text decode="true">&nbsp;颜色:雪白色</text>
+        </view>
+        <view class='money-v'>
+          <text>￥ 129</text>
+          <view class='in-mon'>
+            <text style='opacity: {{item.num==1? "0.3":"1"}}' data-index="{{index}}" catchtap='jiantap'>-</text>
+            <input type='number' value='{{item.num}}' class='num-input' disabled></input>
+            <text data-index="{{index}}" style='opacity: {{item.num==10? "0.3":"1"}}' catchtap='jiatap'>+</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <!--底部结算  -->
+  <view class='stop'>
+    <view class='stop-l' catchtap='jieShuan'>
+      <image src='{{jieImg ?"../../images/gou-red.png": "../../images/gou.png"}}' class='gou-img'></image>
+      <text>全选</text>
+    </view>
+    <view class='stop-r'>
+      <text hidden='{{hidden}}'>合计：￥ {{money}}</text>
+      <view class='in-jies' hidden='{{hidden}}'>去结算</view>
+       <view class='in-jies' hidden='{{!hidden}}' bindtap='clear'>删除</view>
+    </view>
+  </view>
+</view>

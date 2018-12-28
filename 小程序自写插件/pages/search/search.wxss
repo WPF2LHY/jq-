@@ -1,0 +1,34 @@
+/* 普通search */
+.w_search{
+  width: 95%;
+  height: 90rpx;
+  background: #fff;
+  margin: auto;
+  padding: 20rpx 50rpx;
+  box-sizing: border-box;
+}
+.w_search .w_input{
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #444;
+  flex: 1;
+}
+
+/*  带内置取消的search*/
+.wsearch_r{
+  font-size: 28rpx;
+  color: #444;
+  flex: 1;
+}
+/* 带外置取消的search */
+.wsearch{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.wsearch_out{
+  width: 80rpx;
+  font-size: 26rpx;
+  text-align: center;
+  color: green;
+}

@@ -1,0 +1,106 @@
+<view class='h50'>
+</view>
+<!-- list11111 -->
+<view class='wlist start'>
+  <view class='wlist_l'>
+    <image class='imgl' src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1537605353&di=4d968e7014a8d3b220196cfb7ca41f24&src=http://pic.qiantucdn.com/58pic/22/07/69/57b40b8f80f23_1024.jpg'></image>
+  </view>
+
+  <view class='wlist_r'>
+    <view class='wh1'>标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+    <view class='wcont'>内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和</view>
+    <view class='wbuy between'>
+      <text>￥13.0</text>
+      <view class='wbtn'>购买</view>
+    </view>
+  </view>
+</view>
+
+
+
+
+<view class='h50'></view>
+
+<!-- 22222222222222 -->
+
+<view class='wlist2 wrap'>
+  <block wx:for="list" wx:key="i">
+    <view class='wlist2_item'>
+      <image class='imgTop' src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1537605353&di=4d968e7014a8d3b220196cfb7ca41f24&src=http://pic.qiantucdn.com/58pic/22/07/69/57b40b8f80f23_1024.jpg'></image>
+      <view class='wlist2_foot'>
+        <view class='wh1'>标题标题标题标题标题标题标题标题标题标题标题标题标题</view>
+        <view class='wcont'>内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和内容和</view>
+        <view class='wbuy between'>
+          <text>￥13.0</text>
+          <view class='wbtn'>购买</view>
+        </view>
+      </view>
+    </view>
+
+  </block>
+</view>
+
+<view class='h50'></view>
+
+<!-- 3333333333333333333333333333 -->
+<navigator hover-class='none'>
+  <view class='wlist3 between'>
+    <view class='wlist3_l start'>
+      <text>标题1111</text>
+    </view>
+    <view class='wlist3_r end'>
+      <image src='../../images/right.png'></image>
+    </view>
+  </view>
+</navigator>
+
+<navigator hover-class='none'>
+  <view class='wlist3 between'>
+    <view class='wlist3_l start'>
+      <image src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1537605353&di=4d968e7014a8d3b220196cfb7ca41f24&src=http://pic.qiantucdn.com/58pic/22/07/69/57b40b8f80f23_1024.jpg'></image>
+      <text>标题1111</text>
+    </view>
+    <view class='wlist3_r end'>
+      <image src='../../images/right.png'></image>
+    </view>
+  </view>
+</navigator>
+
+<navigator hover-class='none'>
+  <view class='wlist3 between'>
+    <view class='wlist3_l start'>
+      <image src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1537605353&di=4d968e7014a8d3b220196cfb7ca41f24&src=http://pic.qiantucdn.com/58pic/22/07/69/57b40b8f80f23_1024.jpg'></image>
+      <text>标题1111</text>
+    </view>
+    <view class='wlist3_r end'>
+      <text>右标题</text>
+      <image src='../../images/right.png'></image>
+    </view>
+  </view>
+</navigator>
+
+
+<view class='h50'></view>
+
+<!-- 44444444444444-->
+<view class='wlist4 between'>
+  <block wx:for="list1" wx:key="i">
+    <view class='wlist4_item'>
+      <image src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1537605353&di=4d968e7014a8d3b220196cfb7ca41f24&src=http://pic.qiantucdn.com/58pic/22/07/69/57b40b8f80f23_1024.jpg'></image>
+      <view>标题1</view>
+    </view>
+  </block>
+</view>
+
+
+<view class='h50'></view>
+<!-- 5555555555555555555555 -->
+
+<view class='wlist5 start_wrap'>
+  <block wx:for="list1" wx:key="i">
+  <view class='wlist5_item'>
+    <image src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1537605353&di=4d968e7014a8d3b220196cfb7ca41f24&src=http://pic.qiantucdn.com/58pic/22/07/69/57b40b8f80f23_1024.jpg'></image>
+    <view>标题1</view>
+  </view>
+  </block>
+</view>

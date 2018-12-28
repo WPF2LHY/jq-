@@ -1,0 +1,171 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+page{
+  background: #f2f2f2;
+}
+
+.h50{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+}
+.between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.around{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.start{
+  display: flex;
+  justify-content: flex-start;
+}
+.start_C{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.end{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.start_wrap{
+  display: flex;
+  justify-content:  flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.start_end{
+  display: flex;
+  justify-content:  flex-start;
+  align-items: flex-end;
+}
+
+.f20{
+  font-size: 20rpx;
+}
+.f22{
+  font-size: 22rpx;
+}
+.f24{
+  font-size: 24rpx;
+}
+
+.f26{
+  font-size: 26rpx;
+}
+.f28{
+  font-size: 28rpx;
+}
+
+.f30{
+  font-size: 30rpx;
+}
+.f32{
+  font-size: 32rpx;
+}
+.f34{
+  font-size: 34rpx;
+}
+.f36{
+  font-size: 36rpx;
+}
+.f38{
+  font-size: 38rpx;
+}
+.f60{
+  font-size: 60rpx;
+}
+.f70{
+  font-size: 70rpx;
+}
+.Spb{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+/*--授权登录-- 弹框 */
+
+.pop-wrap {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,.5);
+z-index: 999999;
+}
+.pop-con {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 602rpx;
+background: #fff;
+padding-bottom: 30rpx;
+box-sizing:border-box;
+-moz-border-radius: 10rpx;
+-webkit-border-radius: 10rpx;
+border-radius: 10rpx;
+-moz-transform: translate(-50%,-50%);
+-webkit-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);
+}
+.shouQ-img {
+display: block;
+width: 600rpx;
+height: 180rpx;
+margin: 0 auto;
+}
+.use {
+color: #444444;
+font-size: 28rpx;
+line-height: 36rpx;
+padding-left: 30rpx;
+margin: 20rpx 0 10rpx 0;
+} 
+.pop-con text {
+padding-left: 30rpx;
+color: #AAAAAA;
+font-size: 20rpx;
+line-height: 30rpx;
+}
+.pop-con text::before {
+content: "●";
+padding-right: 10rpx;
+color: #CECECE;
+}
+.authorize {
+display: block;
+margin-top: 70rpx;
+padding: 0 20rpx;
+}
+.authorize button {
+height: 88rpx;
+color: #FFFFFF;
+font-size: 32rpx;
+background: #6866E1;
+-moz-border-radius: 10rpx;
+-webkit-border-radius: 10rpx;
+border-radius: 10rpx;
+}

@@ -1,0 +1,27 @@
+<!-- 单行滚动 -->
+<view class="tip">
+  <image src="../../images/ic_home_Tips.png" class="tip_img" />
+  <scroll-view class="tip_container">
+    <view class="scrolltxt">
+      <view class="marquee_box">
+        <view class="marquee_text" style="transform: translateX(-{{marqueeDistance}}px)">
+           <text>{{text}}</text>
+           <text style="margin-right:{{marquee_margin}}px;"></text>
+           <text style="margin-right:{{marquee_margin}}px;">{{text}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<!-- 多行滚动 -->
+<view class='sliding'>
+ <image src="../../images/ic_home_Tips.png" class='slidingImg'></image>
+<swiper autoplay="true"  circular="true" vertical='true' class='sliding_swiper'>
+  <block wx:for="{{slidingArr}}" wx:key='i'>
+    <swiper-item class='start'>
+     <view class='sliding_item'>{{item}}</view>
+    </swiper-item>
+  </block>
+</swiper>
+</view>

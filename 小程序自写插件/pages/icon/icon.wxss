@@ -1,0 +1,42 @@
+@import "../../utils/public.wxss";/*引用图标*/
+.iconfont{
+  font-size: 64rpx;
+}
+.wlist4{
+  width: 100%;
+  padding:20rpx;
+  background: #fff;
+  /* height: 100rpx; */
+  box-sizing: border-box;
+}
+.wlist4_item{
+  width:48%;
+  height: 190rpx;
+  color:#444;
+  font-size:28rpx;
+  text-align: center;
+  border: 1px solid #eee;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}
+.wlist4_item image{
+  width:50rpx;
+  height:50rpx;
+  margin-bottom:10rpx
+}
+icon{
+  width: 64rpx;
+  height: 64rpx;
+  margin-bottom: 20rpx;
+  color: red;
+}
+
+
+/* 22222222222222222222222222 */
+.icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
